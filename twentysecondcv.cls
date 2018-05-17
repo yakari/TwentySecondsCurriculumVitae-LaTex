@@ -224,22 +224,22 @@
 		\end{tabular}
 
 		%------------------------------------------------
-		
-		\ifthenelse{\equal{\aboutme}{}}{}{
-			\profilesection{About me}
-			\begin{flushleft}
-				\aboutme
-			\end{flushleft}
-		}
-
-		%------------------------------------------------
 
 		\profilesection{Compétences}
 
 		\skills
-		\skillstext
-		\scriptsize
-		(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
+		%\skillstext
+		%\scriptsize
+		%(*)[Les compétences s'échelonnent de 0 (connaissance des fondamentaux) à 6 (Expert).]
+		
+		%------------------------------------------------
+		
+		\ifthenelse{\equal{\aboutme}{}}{}{
+			\profilesection{Points forts}
+			\begin{flushleft}
+				\aboutme
+			\end{flushleft}
+		}
 			
 		%------------------------------------------------
 			
@@ -260,6 +260,7 @@
 	{%
 		\round{#1}{
 			\ifcase\value{colorCounter}%
+			mainblue\or%
 			maingray\or%
 			mainblue\or%
 			maingray\or%
