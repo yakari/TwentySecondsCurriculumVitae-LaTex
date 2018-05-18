@@ -27,6 +27,8 @@
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 
+\usepackage{setspace}
+
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 
@@ -153,12 +155,16 @@
 		}
 
 		%------------------------------------------------
+		
+		\begin{onehalfspace}
 
-		{\Huge\color{mainblue}\cvname}
+			{\Huge\color{mainblue}\cvname\newline}
 
-		%------------------------------------------------
+			%------------------------------------------------
 
-		{\Large\color{black!80}\cvjobtitle}
+			{\Large\color{black!80}\cvjobtitle}
+		
+		\end{onehalfspace}
 
 		%------------------------------------------------
 
